@@ -1,0 +1,38 @@
+% \special{dvipdfmx:config z 0}
+
+\documentclass[algorithmlist, figurelist,tablelist, nomlist,phd]{seuthesix}
+
+%国标
+\usepackage[backend=biber,style=gb7714-2015]{biblatex}
+%东南大学样式
+%\usepackage[backend=biber,style=gb7714-SEU]{biblatex}
+\addbibresource[location=local]{ref.bib}
+
+\input{abbr.tex}
+% \includeonly{}
+% \includeonly{abstract.tex,c1/outline.tex,c_model/outline.tex, c_steady/outline.tex,c_dyn/outline.tex, c_fault/outline.tex,c_lang/outline.tex, bib.tex,,appendix/outline.tex}
+
+\begin{document}
+\input{info.tex}
+
+%% 摘要
+\include{abstract_cn.tex}
+\include{abstract_en.tex}
+\include{contents.tex}
+
+\include{c_intro/outline.tex}
+\include{c_conclusion/c7.tex}
+
+%% 附录
+\include{appendix/outline.tex}
+
+%% 参考文献
+\include{bib.tex}
+
+%% 成果
+\include{publications.tex}
+
+%% 致谢
+\include{acknowledgement.tex}
+
+\end{document}

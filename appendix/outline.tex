@@ -1,0 +1,21 @@
+\appendix
+
+\clearpage\thispagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+\fancyhead[CO]{\xiaowuhao 附录}  % 奇数页右侧 -> "附录"
+\fancyhead[CE]{\xiaowuhao 东南大学博士学位论文} % 偶数页左侧保持不变
+\renewcommand{\chaptermark}[1]{\markboth{附录}{}} % 强制章节标记为附录
+
+% 添加一个非编号的附录章节标题，并将其加入目录
+\chapter*{附录}
+\addcontentsline{toc}{chapter}{附录}
+
+% 修改section编号格式为 A.1, A.2...
+\renewcommand{\thesection}{A.\arabic{section}}
+\renewcommand{\theequation}{A.\arabic{equation}}
+
+\setcounter{section}{0}
+\setcounter{equation}{0}
+
+\input{appendix/A.tex}
