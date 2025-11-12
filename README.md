@@ -1,4 +1,4 @@
-# 东南大学博士学位论文模板
+# 东南大学博士学位论文latex模板
 
 本项目在[seuthesix](https://github.com/zhimengfan1990/seuthesix)的基础上进行微调，通过了2025届工学博士毕业论文的格式审查。请将项目克隆到本地，接着导入至overleaf或texpage等网站以开始学位论文的写作。
 
